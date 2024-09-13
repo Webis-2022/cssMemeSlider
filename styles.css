@@ -48,20 +48,31 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
+}
+.btn-wrapper1, .btn-wrapper2, .btn-wrapper3, .btn-wrapper4 {
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn {
     width: 10px;
     height: 10px;
     border-radius: 50px;
     background-color: #3896ad;
+    cursor: pointer;
 }
 @keyframes move-left {
     from {
         transform: translateX(0px);
     }
     to {
-        transform: translateX(-740px);
+        transform: translateX(-610px);
     }
   }
   .transition-left {
