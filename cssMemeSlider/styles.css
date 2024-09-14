@@ -24,7 +24,7 @@
 }
 .slider img {
     width: 37%;
-    height: 325px;
+    height: 60vh;
 }
 .slider-bottom {
     width: 90%;
@@ -97,7 +97,6 @@
     }
     
 }
-
 
 @media (max-width: 600px) {
     .slider-bottom {
