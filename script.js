@@ -8,7 +8,7 @@ let gap = slider.style.gap;
 let ruleIndex;
 let styleSheet;
 let arrOfImages = ["Did you do", "I did it", "Let's drink", "I don't drink"];
-let arrOfText = ["Did you do the Meme Slider task?", "Yes, I did it!", "Let's drink friend!", "No, until finishing Front-end Course I have a dry law"];
+let arrOfText = ["Did you do the Meme Slider task?", "Yes, I did it!", "Let's drink comrade!", "No, until finishing Front-end Course I have a dry law"];
 
 function sliderInit() {
     // create picture

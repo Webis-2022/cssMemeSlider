@@ -31,6 +31,7 @@
     display: flex;
     justify-content: space-between;
     margin: 20px auto;
+    gap: 30px;
 }
 .slider-text {
     transition: opacity 1s ease-in-out;
@@ -80,4 +81,35 @@
 .btn.active:hover {
     background-color: transparent;
     border: 2px solid #fff
+}
+
+@media (max-width: 768px) {
+    .slider-bottom {
+        gap: 30px;
+    }
+    .slider-text p {
+        font-size: 1em;
+    }
+    .btn {
+        width: 12px;
+        height: 12px;
+        border-width: 3px;
+    }
+    
+}
+
+
+@media (max-width: 600px) {
+    .slider-bottom {
+        gap: 20px;
+    }
+    .slider-text p {
+        font-size: 0.8em;
+    }
+    .btn {
+        width: 10px;
+        height: 10px;
+        border-width: 3px;
+    }
+    
 }
