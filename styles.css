@@ -1,6 +1,5 @@
 .slider-wrapper {
     width: 57.8vw;
-    height: 440px;
     background-color: #e7e7e7;
     display: flex;
     justify-content: center;
@@ -10,7 +9,6 @@
 }
 .slider-background {
     width: 56.8vw;
-    height: 430px;
     background-color: #000;
     overflow: hidden;
 }
@@ -61,21 +59,25 @@
     align-items: center;
 }
 .btn {
-    width: 10px;
-    height: 10px;
-    border-radius: 50px;
-    background-color: #3896ad;
+    border: 5px solid transparent;
+    background-clip: padding-box;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    display: block;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: #75a7ff;
     cursor: pointer;
 }
-@keyframes move-left {
-    from {
-        transform: translateX(0px);
-    }
-    to {
-        transform: translateX(-610px);
-    }
-  }
-  .transition-left {
-    animation-name: move-left;
-    animation-duration: 1.3s;
-  }
+.btn:hover {
+    background-color: #fff;
+}
+.active {
+    background-color: transparent;
+    border: 2px solid #75a7ff;
+}
+.btn.active:hover {
+    background-color: transparent;
+    border: 2px solid #fff
+}
