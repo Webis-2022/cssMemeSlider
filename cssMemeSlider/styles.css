@@ -101,6 +101,10 @@
 @media (max-width: 600px) {
     .slider-bottom {
         gap: 20px;
+        flex-direction: column-reverse;
+    }
+    .slider-controls {
+        justify-content: center;
     }
     .slider-text p {
         font-size: 0.8em;
