@@ -3,26 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Meme Slider</title>
+    <title>CSS Grid Slider</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="slider-wrapper">
-        <div class="slider-background">
-            <div class="slider-block">
-                <div class="slider"></div>
-            </div>
-            <div class="slider-bottom">
-                <div class="slider-text"></div>
-                <div class="slider-controls">
-                    <button class="btn button1"></button>
-                    <button class="btn button2"></button>
-                    <button class="btn button3"></button>
-                    <button class="btn button4"></button>
+    <div class="slider">
+        <input type="radio" name="r-button" id="btn1">
+        <input type="radio" name="r-button" id="btn2">
+        <input type="radio" name="r-button" id="btn3">
+        <input type="radio" name="r-button" id="btn4">
+
+        <div class="slides">
+            <div class="slides-inner">
+                <div class="slide">
+                    <img src="img/Did you do.jpg" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="img/I did it.jpg" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="img/Let's drink.jpg" alt="Slide 3">
+                </div>
+                <div class="slide">
+                    <img src="img/I don't drink.jpg" alt="Slide 4">
                 </div>
             </div>
         </div>
+
+        <div class="slider-text">
+            <div class="text-inner">
+                <p class="text">Did you do the Meme Slider task?</p>
+                <p class="text">Yes, I did it!</p>
+                <p class="text">Let's drink comrade!</p>
+                <p class="text">No, until finishing Front-end Course I have a dry law</p>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <label for="btn1" class="label"></label>
+            <label for="btn2" class="label"></label>
+            <label for="btn3" class="label"></label>
+            <label for="btn4" class="label"></label>
+        </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
