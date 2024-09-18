@@ -84,23 +84,42 @@ input[type="radio"] {
     display: none;
 }
 
+/* Button checked and hovered */
+#btn1:checked:hover ~ .navigation label[for="btn1"] {
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+#btn2:checked:hover ~ .navigation label[for="btn2"] {
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+#btn2:checked:hover ~ .navigation label[for="btn2"] {
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+#btn2:checked:hover ~ .navigation label[for="btn2"] {
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+
+/* Button checked */
 #btn1:checked ~ .navigation label[for="btn1"] {
-    background-color: #fff;
+    background-color: transparent;
     border: 2px solid #75a7ff;
 }
 
 #btn2:checked ~ .navigation label[for="btn2"] {
-    background-color: #fff;
+    background-color: transparent;
     border: 2px solid #75a7ff;
 }
 
 #btn3:checked ~ .navigation label[for="btn3"] {
-    background-color: #fff;
+    background-color: transparent;
     border: 2px solid #75a7ff;
 }
 
 #btn4:checked ~ .navigation label[for="btn4"] {
-    background-color: #fff;
+    background-color: transparent;
     border: 2px solid #75a7ff;
 }
 
@@ -139,6 +158,8 @@ input[type="radio"] {
     transform: translateX(-300%);
 }
 
+
+/* CSS for display smaller 650px */
 @media (max-width: 650px) {
     .text {
         font-size: 1.0em;
