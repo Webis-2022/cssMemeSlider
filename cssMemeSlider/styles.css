@@ -20,6 +20,7 @@
     grid-column: 1 / span 2;
     grid-row: 1;
     overflow: hidden;
+    border-radius: 10px;
 }
 .slides-inner {
     display: flex;
@@ -163,5 +164,23 @@ input[type="radio"] {
 @media (max-width: 650px) {
     .text {
         font-size: 1.0em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .slider {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 2fr; 
+    }
+    .navigation {
+        grid-row: 2; 
+        display: flex;
+        justify-content: center; 
+        margin-top: 20px; 
+    }
+    .slider-text {
+        grid-row: 3; 
+        text-align: left; 
+        padding-left: 10px; 
+        margin-top: 10px;
     }
 }
